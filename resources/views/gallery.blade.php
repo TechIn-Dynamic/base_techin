@@ -9,7 +9,7 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="gallery-item">
                     <img src="{{ asset('images/point-of-sale.png') }}" alt="Point Of Sale" class="gallery-image">
-                    <div class="gallery-title">Point Of Sale &gt;</div>
+                    <div class="gallery-title">Cashier &gt;</div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
