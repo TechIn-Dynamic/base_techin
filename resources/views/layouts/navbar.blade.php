@@ -1,10 +1,10 @@
-<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light sticky-top">
     <div class="container-fluid ms-3 d-flex justify-content-between align-items-center">
         <a class="navbar-brand d-flex align-items-center" href="#">
             <img src="{{ asset('images/logo.png') }}" alt="Logo" width="50" height="50">
             <div class="ml-2">
-                <div>TECH IN</div>
-                <div>DYNAMIC</div>
+                <div class="brand-part1">TECH IN</div>
+                <div class="brand-part2">DYNAMIC</div>
             </div>
         </a>
 

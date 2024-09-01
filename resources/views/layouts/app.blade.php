@@ -397,10 +397,11 @@
             /* Slightly enhance the shadow for better focus */
         }
 
+        /* footer */
         .footer {
             background-color: #f8f9fa;
             /* Light gray background */
-            padding: 80px 0;
+            padding: 10% 0;
             color: #333;
             /* Dark text color */
         }
@@ -478,6 +479,35 @@
             font-weight: bold;
             margin-bottom: 10px;
         }
+
+        .card {
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            /* Mengangkat kartu sedikit */
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            /* Memperkuat bayangan */
+        }
+
+        .card-img-top {
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover .card-img-top {
+            transform: scale(1.05);
+            /* Memperbesar gambar sedikit */
+        }
+
+        #navbar {
+            transition: top 0.3s;
+            /* Smooth transition */
+        }
     </style>
 </head>
 
@@ -490,6 +520,33 @@
     </div>
 
     <!-- JavaScript and Bootstrap JS -->
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.getElementById('navbar');
+        let isScrolling;
+
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                navbar.style.top = '-80px'; // Hide navbar on scroll down
+            } else {
+                navbar.style.top = '0'; // Show navbar on scroll up
+            }
+
+            lastScrollTop = scrollTop;
+
+            clearTimeout(isScrolling);
+
+            isScrolling = setTimeout(function() {
+                if (scrollTop === 0) {
+                    navbar.style.top = '0'; // Navbar visible at top of the page
+                }
+            }, 300); // Timeout duration for scrolling inactivity
+        });
+    </script>
+
+
 </body>
 
 </html>
