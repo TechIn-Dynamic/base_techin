@@ -263,9 +263,9 @@
                     </div>
                     <div class="col-md-4 footer-contact">
                         <h4>Contact Us</h4>
-                        <p><i class="fas fa-map-marker-alt"></i>Gatot Subroto</p>
-                        <p><i class="fas fa-phone"></i>0895415461540</p>
-                        <p><i class="fas fa-envelope"></i> techindynamic@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Gatot Subroto</p>
+                        <p><i class="fas fa-phone"></i> 0895415461540</p>
+                        <p><i class="fas fa-envelope"></i> techin.dynamic@gmail.com</p>
                     </div>
                 </div>
             </div>
